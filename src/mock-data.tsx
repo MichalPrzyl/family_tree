@@ -5,7 +5,8 @@ const mockPeopleList = [
         lastName: "Przyłucki",
         birthDate: '29 lipca 1996',
         deathDate: "---",
-        parent: null
+        parent: null,
+        partner: 7
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const mockPeopleList = [
         lastName: "Pudzianowski",
         birthDate: '17 października 1996',
         deathDate: "---",
-        parent: 1
+        parent: 1,
+        partner: null
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const mockPeopleList = [
         lastName: "Przyłucki",
         birthDate: '17 października 1996',
         deathDate: "---",
-        parent: null
+        parent: null,
+        partner: null
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const mockPeopleList = [
         lastName: "Przyłucki",
         birthDate: '17 października 1996',
         deathDate: "---",
-        parent: 3
+        parent: 3,
+        partner: null
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const mockPeopleList = [
         lastName: "Michała",
         birthDate: '17 października 1996',
         deathDate: "---",
-        parent: 1
+        parent: 1,
+        partner: null
     },
     {
         id: 6,
@@ -45,7 +50,44 @@ const mockPeopleList = [
         lastName: "Michała",
         birthDate: '17 października 1996',
         deathDate: "---",
-        parent: 1
+        parent: 1,
+        partner: null
+    },
+    {
+        id: 7,
+        firstName: "Kinga",
+        lastName: "Witczak",
+        birthDate: '29 lipca 1996',
+        deathDate: "---",
+        parent: null,
+        partner: 1
+    },
+    {
+        id: 8,
+        firstName: "Sebastian",
+        lastName: "Witczak",
+        birthDate: '29 lipca 1996',
+        deathDate: "---",
+        parent: null,
+        partner: 9
+    },
+    {
+        id: 9,
+        firstName: "Małgorzata",
+        lastName: "Witczak",
+        birthDate: '29 lipca 1996',
+        deathDate: "---",
+        parent: null,
+        partner: 8
+    },
+    {
+        id: 10,
+        firstName: "aaa",
+        lastName: "aaa",
+        birthDate: '29 lipca 1996',
+        deathDate: "---",
+        parent: 9,
+        partner: null
     },
 ]
 
