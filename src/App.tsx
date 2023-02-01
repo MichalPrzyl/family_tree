@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react';
+import AddPerson from './addPerson';
+import Tree from './tree'
+import IPerson from './interfaces/person';
+
+import TestApp from './ContextTest';
+
+// export const Context = React.createContext<{} >({ people: [] as IPerson[] });
+export const Context = React.createContext({} as any);
 
 function App() {
+
+  const [peopleList, setPeopleList] = useState([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Context.Provider
+        value={{
+          peopleList: peopleList,
+          setPeopleList: setPeopleList
+        }}
+      >
+
+
+        <AddPerson />
+        <Tree />
+        {/* <TestApp />  here i tested context*/}
+      </Context.Provider>
+
+    </>
   );
 }
 

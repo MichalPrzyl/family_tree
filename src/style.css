@@ -1,0 +1,20 @@
+.person{
+    min-width: 300px;
+    width: fit-content;
+    /* text-align: center; */
+    display: inline-block;
+    background: gray;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 20px;
+    /* border-radius: 50px 0 50px 0; */
+    border-radius: 5px 5px 25px 25px;
+    box-shadow: 0 0 10px 2px black;
+    position: absolute;
+}
+
+.person-description-names{
+    color: white;
+    font-size: 1.2em;
+}
+
